@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  style
+    .image {
+      text-align: center;
+      display: inline-block;
+    }
+  - for image in images
+    .image
+      img(src="/img/simmons/#{image}")
+      h3 #{image}
